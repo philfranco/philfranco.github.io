@@ -18,7 +18,16 @@ body, html {height: 100%}
 </style>
 </head>
 <body>
-<script src="countDown.js"></script>
+
+<script src="javaScript/SpryEffects.js" type="text/javascript"></script>
+<script type="text/javascript">
+function MM_effectAppearFade(targetElement, duration, from, to, toggle)
+{
+	Spry.Effect.DoFade(targetElement, {duration: duration, from: from, to: to, toggle: toggle});
+}
+
+</script>
+<script src="javaScript/countDown.js"></script>
 <link href="testing.css" rel="stylesheet" type="text/css" />
 
 <div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
@@ -28,6 +37,13 @@ body, html {height: 100%}
     <h3 id="countdown"></h3>
   </div>
 </div>
+
+<div id="ring" onclick="MM_effectAppearFade('newText', 1000, 50, 100, false);
+MM_effectAppearFade('grey', 1000, 50, 100, false)">
+</div>
+
+<div id="grey"></div>
+<div id="newText"></div>
 
 </body>
 </html>
