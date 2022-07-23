@@ -30,3 +30,25 @@ H1 { text-align: center }
 	top: 181px;
 	display: none;
 }
+
+canvas {
+	cursor: crosshair;
+	display: block;
+	background-color:black;
+	color:white;
+	font-size: 48px;
+	text-align: center;
+}
+
+.fireworks {
+    background-color:black;
+	color:white;
+	font-size: 48px;
+	text-align: center;
+}
+
+.fireworksText {
+	background-color:rgba(0, 0, 0, 0);
+	color:white;
+	font-size: 48px;
+}
