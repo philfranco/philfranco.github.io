@@ -194,19 +194,31 @@ function createParticles( x, y ) {
 	}
 }
 
+function writeText() {
+	canvas.width  = innerWidth;
+    canvas.height = innerHeight;
+
+	ctx.font = "30px Arial";
+    ctx.fillStyle = "white";
+	ctx.textAlign = "center";
+    ctx.fillText("Congratulations!",canvas.width/2, canvas.height/2-50);
+
+    var ctx2 = canvas.getContext("2d");
+	ctx2.font = "24px Arial";
+	ctx2.fillText("You have opened the box!",canvas.width/2,canvas.height/2);
+	
+	var ctx3 = canvas.getContext("2d");
+	ctx3.font = "24px Arial";
+	ctx3.fillText("Scroll down to see your reward!",canvas.width/2,canvas.height/2+50);
+}
+
 // main demo loop
 function loop() {
 	var canvas = document.getElementById("canvas");
     var ctx = canvas.getContext("2d");
-	var ctx2 = canvas.getContext("2d");
-    ctx.font = "30px Arial";
-    ctx.fillStyle = "white";
-	// ctx.textAlign = "center";
-    ctx.fillText("Congratulations!",550,250);
-
-	ctx2.font = "24px Arial";
-	ctx2.fillText("You have opened the box! Scroll down to see your reward!",350,300);
 	
+    writeText()
+
 	// this function will run endlessly with requestAnimationFrame
 	requestAnimFrame( loop );
 	
