@@ -258,6 +258,8 @@ function loop() {
 		if( !mousedown ) {
 			// start the firework at the bottom middle of the screen, then set the random target coordinates, the random y coordinates will be set within the range of the top half of the screen
 			fireworks.push( new Firework( cw / 2, ch, random( 0, cw ), random( 0, ch / 2 ) ) );
+			fireworks.push( new Firework( cw / 2, ch, random( 0, cw ), random( 0, ch / 2 ) ) );
+			fireworks.push( new Firework( cw / 2, ch, random( 0, cw ), random( 0, ch / 2 ) ) );
 			timerTick = 0;
 		}
 	} else {
@@ -278,21 +280,21 @@ function loop() {
 
 // mouse event bindings
 // update the mouse coordinates on mousemove
-canvas.addEventListener( 'mousemove', function( e ) {
-	mx = e.pageX - canvas.offsetLeft;
-	my = e.pageY - canvas.offsetTop;
-});
+//canvas.addEventListener( 'mousemove', function( e ) {
+//	mx = e.pageX - canvas.offsetLeft;
+//	my = e.pageY - canvas.offsetTop;
+//});
 
 // toggle mousedown state and prevent canvas from being selected
-canvas.addEventListener( 'mousedown', function( e ) {
-	e.preventDefault();
-	mousedown = true;
-});
+//canvas.addEventListener( 'mousedown', function( e ) {
+//	e.preventDefault();
+//	mousedown = true;
+//});
 
-canvas.addEventListener( 'mouseup', function( e ) {
-	e.preventDefault();
-	mousedown = false;
-});
+//canvas.addEventListener( 'mouseup', function( e ) {
+//	e.preventDefault();
+//	mousedown = false;
+//});
 
 // once the window loads, we are ready for some fireworks!
 window.onload = loop;
