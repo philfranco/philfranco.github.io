@@ -1,24 +1,14 @@
 H3 { text-align: center }
 H1 { text-align: center }
 
-#grey {
+.grey {
 	position: absolute;
-	height: 800px;
-	width: 4000px;
-	left: 0px;
-	top: 0px;
-	background-image: url(philtest.png);
-	display: none;
-	overflow: auto;
-}
-
-#ring {
-	background-color: rgba(255, 0, 0, 0);
-	position: absolute;
-	height: 15px;
-	width: 15px;
-	left: 840px;
-	top: 340px;
+	height: 25%;
+	width: 75%;
+	left: 12.5%;
+	top: 75%;
+	border-radius: 25px;
+	background-color: rgba(0, 0, 0, 0.6);
 }
 
 #newText {
@@ -32,7 +22,6 @@ H1 { text-align: center }
 }
 
 canvas {
-	cursor: crosshair;
 	display: block;
 	background-color:black;
 	color:white;
