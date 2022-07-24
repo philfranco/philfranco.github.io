@@ -1,3 +1,4 @@
+H6 { text-align: center }
 H3 { text-align: center }
 H1 { text-align: center }
 
@@ -11,16 +12,6 @@ H1 { text-align: center }
 	background-color: rgba(0, 0, 0, 0.6);
 	padding: 7px;
 	text-align: center;
-}
-
-#newText {
-	background-color: rgb(255, 255, 255);
-	position: absolute;
-	height: 216px;
-	width: 400px;
-	left: 344px;
-	top: 181px;
-	display: none;
 }
 
 canvas {
