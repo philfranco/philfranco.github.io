@@ -67,7 +67,7 @@ function Firework( sx, sy, tx, ty ) {
 	this.distanceTraveled = 0;
 	// track the past coordinates of each firework to create a trail effect, increase the coordinate count to create more prominent trails
 	this.coordinates = [];
-	this.coordinateCount = 3;
+	this.coordinateCount = 2;
 	// populate initial coordinate collection with the current coordinates
 	while( this.coordinateCount-- ) {
 		this.coordinates.push( [ this.x, this.y ] );
@@ -125,8 +125,9 @@ Firework.prototype.draw = function() {
 	ctx.stroke();
 	
 	ctx.beginPath();
+
 	// draw the target for this firework with a pulsing circle
-	ctx.arc( this.tx, this.ty, this.targetRadius, 0, Math.PI * 2 );
+	//ctx.arc( this.tx, this.ty, this.targetRadius, 0, Math.PI * 2 );
 	ctx.stroke();
 }
 
@@ -188,7 +189,7 @@ Particle.prototype.draw = function() {
 // create particle group/explosion
 function createParticles( x, y ) {
 	// increase the particle count for a bigger explosion, beware of the canvas performance hit with the increased particles though
-	var particleCount = 30;
+	var particleCount = 50;
 	while( particleCount-- ) {
 		particles.push( new Particle( x, y ) );
 	}
