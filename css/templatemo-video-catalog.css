@@ -90,14 +90,8 @@ h2, p { color: #666666; }
 .video-button-bottom{
     position:absolute;
     margin-top:35%;
-    left:25%
+    align-self: center;
   }
-
-.video-button-hires{
-    position:absolute;
-    margin-top:35%;
-    left:55%
-    }
 
 .btn {
     padding: 15px 60px;
