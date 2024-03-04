@@ -354,8 +354,8 @@ h2, p { color: #666666; }
     background-color: #666;
 }
 
-#tm-fixed-header-bg { height: 250px; }
-.tm-fixed-header-1 { background-image: url(../img/flippingOverBridge.jpg); }
+#tm-fixed-header-bg { height: 200px; }
+.tm-fixed-header-1 { background-image: url(../img/testing.jpg); }
 .tm-fixed-header-2 { background-image: url(../img/river.jpg); }
 .tm-fixed-header-3 { background-image: url(../img/fall.jpg); }
 
