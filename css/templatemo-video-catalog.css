@@ -205,7 +205,7 @@ h2, p { color: #666666; }
 
 .tm-content-container {
     max-width: 1422px;
-    padding-top: 80px;
+    padding-top: 30px;
     padding-bottom: 35px;
 }
 
@@ -315,7 +315,6 @@ h2, p { color: #666666; }
 .fluid-yt{
   width: 100%;
   aspect-ratio: 16 / 9;
-  display: block;
 }
 
 .fluid-yt > iframe {
