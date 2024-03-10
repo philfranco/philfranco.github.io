@@ -568,3 +568,9 @@ video {
         flex-direction: column;
     }
 }
+
+@media (max-width: 720px){
+  .hide{
+      display:none;
+  }
+}
