@@ -472,7 +472,8 @@ video {
     font-style: italic;
 }
 
-@media (min-width: 719px) {
+/* want to change to 720 */
+@media (min-width: 992px) {
     #tm-main-nav .nav-item { margin: 20px 40px; }
     .navbar-expand-lg .navbar-nav .nav-link { padding: 8px 0px; }
     .navbar-expand-lg .navbar-collapse { justify-content: flex-end; }
@@ -482,7 +483,8 @@ video {
     .tm-catalog-item { margin-bottom: 30px; }
 }
 
-@media (max-width: 718px) {
+/* want to change to 719 */
+@media (max-width: 991px) {
     .navbar {
         max-width: 220px;
         position: absolute;
@@ -519,11 +521,12 @@ video {
     .tm-welcome-container-inner { margin-top: 150px; }
     .tm-welcome-text { font-size: 1.4rem; }
 
-    /* #tm-video {
+    /* not sure why I need this */
+    #tm-video {
         width: 888px;
         height: 500px;
         display: block;
-    } */
+    }
 
     .tm-logo-container {
         height: 160px;
@@ -546,6 +549,7 @@ video {
     }
 }
 
+/* probably dont need
 @media (max-width: 640px) {
     .tm-subscribe-form {
         flex-direction: column;
@@ -565,7 +569,7 @@ video {
         padding-left: 1.5rem;
         padding-right: 1.5rem;
     }
-}
+} */
 
 @media (max-width: 419px) {
     .tm-testimonial {
