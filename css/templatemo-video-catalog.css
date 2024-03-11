@@ -93,7 +93,7 @@ h2, p { color: #666666; }
 .tm-welcome-text-video { font-size: 3.2rem; }
 
 .video-button-bottom{
-    position:relative;
+    position:absolute;
     margin-top:20%;
     align-self: center;
   }
