@@ -418,20 +418,6 @@ video {
 }
 
 /* Contact */
-.mapouter{
-    position:relative;
-    text-align:right;
-    height:540px;
-    width:100%;
-}
-
-.gmap_canvas {
-    overflow:hidden;
-    background:none!important;
-    height:540px;
-    width:100%;
-}
-
 .form-control {
     font-size: 1.2rem;
     padding: 21px 25px;

@@ -2,13 +2,13 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Video Catalog</title>
-    <link rel="stylesheet" href="fontawesome/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/templatemo-video-catalog.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Video Catalog</title>
+  <link rel="stylesheet" href="fontawesome/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/templatemo-video-catalog.css">
 </head>
 
 <body>
@@ -56,172 +56,174 @@
           </div>
         </div>
       </div>
-            <div class="tm-welcome-container text-center text-white">
-              <div class="tm-welcome-container-inner">
-                  <p class="tm-welcome-text-video text-white">
 
-                    <!-- https://github.com/mattboldt/typed.js/?tab=readme-ov-file -->
-                    <!-- Element to contain animated typing -->
-                    <span id="element"></span>
+      <div class="tm-welcome-container text-center text-white">
+        <div class="tm-welcome-container-inner">
+          <p class="tm-welcome-text-video text-white">
 
-                    <!-- Load library from the CDN -->
-                    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+            <!-- https://github.com/mattboldt/typed.js/?tab=readme-ov-file -->
+            <!-- Element to contain animated typing -->
+            <span id="element"></span>
 
-                    <!-- Setup and start animation! -->
-                    <script>
-                      var typed = new Typed('#element', {
-                        strings: ['FPV Pilot Profile: ^1000 Phil Franco', ''],
-                        typeSpeed: 75,
-                        backSpeed: 35,
-                        showCursor: false,
-                      });
-                    </script>
+            <!-- Load library from the CDN -->
+            <!-- <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script> ORIGINAL AREA -->
+            <script src="js/typed.umd.js"></script>
+
+            <!-- Setup and start animation! -->
+            <script>
+              var typed = new Typed('#element', {
+                strings: ['FPV Pilot Profile: ^1000 Phil Franco', ''],
+                typeSpeed: 75,
+                backSpeed: 35,
+                showCursor: false,
+              });
+            </script>
+          </p>
+        </div>
+
+        <div class="video-button-bottom hide">
+          <a href="#content" class="btn tm-btn-animate tm-btn-cta tm-icon-down">
+            <span>Discover</span>
+          </a>
+        </div>
+      </div>
+
+      <div id="tm-video-container">
+        <video autoplay muted loop playsinline id="tm-video">
+          <source src="video/frontPageVid.mp4" type="video/mp4">
+        </video>
+      </div>
+
+      <i id="tm-video-control-button" class="fas fa-pause"></i>
+    </div>
+
+    <div class="container-fluid">
+      <div id="content" class="mx-auto tm-content-container">
+        <main>
+            <div class="row tm-catalog-item-list">
+              <div class="col-lg-4 col-md-6 col-sm-12 tm-catalog-item">
+                <div class="position-relative tm-thumbnail-container">
+                  <img src="img/dirtBike.jpg" alt="Image" class="img-fluid tm-catalog-item-img">
+                  <a href="videoPages/highlights.html" class="position-absolute tm-img-overlay">
+                    <i class="fas fa-play tm-overlay-icon"></i>
+                  </a>
+                </div>
+                <div class="p-4 tm-bg-gray tm-catalog-item-description">
+                  <h3 class="tm-text-primary mb-3 tm-catalog-item-title">Unveiling My Expertise</h3>
+                  <p class="tm-catalog-item-text">Witness the culmination of countless hours poured into refining my
+                                                  skills and honing my craft. Whether it's breathtaking cinematography,
+                                                  stunning motion graphics, or innovative design concepts, every element
+                                                  of the highlight video is a reflection of my commitment to excellence.
                   </p>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 col-sm-12 tm-catalog-item">
+                <div class="position-relative tm-thumbnail-container">
+                  <img src="img/voiceComm.jpg" alt="Image" class="img-fluid tm-catalog-item-img">
+                  <a href="videoPages/voiceComm.html" class="position-absolute tm-img-overlay">
+                      <i class="fas fa-play tm-overlay-icon"></i>
+                  </a>
+                </div>
+                <div class="p-4 tm-bg-gray tm-catalog-item-description">
+                  <h3 class="tm-text-primary mb-3 tm-catalog-item-title">Immersive Experience</h3>
+                  <p class="tm-catalog-item-text">Break free from the confines of traditional videography
+                                                  and explore indoor spaces in ways you never thought possible.
+                                                  With our drone tour highlight video, the sky's the limit as we
+                                                  redefine the boundaries of storytelling and visual exploration.
+                  </p>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 col-sm-12 tm-catalog-item">
+                <div class="position-relative tm-thumbnail-container">
+                  <img src="img/wedding.png" alt="Image" class="img-fluid tm-catalog-item-img">
+                  <a href="videoPages/wedding.html" class="position-absolute tm-img-overlay">
+                      <i class="fas fa-play tm-overlay-icon"></i>
+                  </a>
+                </div>
+                <div class="p-4 tm-bg-gray tm-catalog-item-description">
+                  <h3 class="tm-text-primary mb-3 tm-catalog-item-title">Elegance in Motion</h3>
+                  <p class="tm-catalog-item-text">Flying inside is a unique way to show off space. Check out this video
+                                                  where the drone navigates around inside and outside a wedding venue, as
+                                                  the groomsmen enjoy the setting.
+                  </p>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 col-sm-12 tm-catalog-item">
+                <div class="position-relative tm-thumbnail-container">
+                  <img src="img/collegeTour.png" alt="Image" class="img-fluid tm-catalog-item-img">
+                  <a href="videoPages/collegeTour.html" class="position-absolute tm-img-overlay">
+                      <i class="fas fa-play tm-overlay-icon"></i>
+                  </a>
+                </div>
+                <div class="p-4 tm-bg-gray tm-catalog-item-description">
+                  <h3 class="tm-text-primary mb-3 tm-catalog-item-title">College Tour!</h3>
+                  <p class="tm-catalog-item-text">Experience the essence of higher education as we take you on a guided tour
+                                                  through the heart of an esteemed institution. From cutting-edge research
+                                                  labs to bustling student centers, each section of the video highlights the
+                                                  innovative learning environment that the college has to offer.
+                  </p>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 col-sm-12 tm-catalog-item">
+                <div class="position-relative tm-thumbnail-container">
+                  <img src="img/warehouseOverlay.png" alt="Image" class="img-fluid tm-catalog-item-img">
+                  <a href="videoPages/warehouse.html" class="position-absolute tm-img-overlay">
+                      <i class="fas fa-play tm-overlay-icon"></i>
+                  </a>
+                </div>
+                <div class="p-4 tm-bg-gray tm-catalog-item-description">
+                  <h3 class="tm-text-primary mb-3 tm-catalog-item-title">Construction Start To Finish</h3>
+                  <p class="tm-catalog-item-text">Embark on an extraordinary journey through the evolution of a warehouse, from its
+                                                  humble beginnings to its grand completion. Our highlight video captures every riveting
+                                                  moment of the construction process, offering a glimpse into the meticulous planning,
+                                                  tireless labor, and sheer determination that brought this monumental project to life.
+                  </p>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 col-sm-12 tm-catalog-item">
+                <div class="position-relative tm-thumbnail-container">
+                  <img src="img/PlantNursery.jpg" alt="Image" class="img-fluid tm-catalog-item-img">
+                  <a href="videoPages/nursery.html" class="position-absolute tm-img-overlay">
+                      <i class="fas fa-play tm-overlay-icon"></i>
+                  </a>
+                </div>
+                <div class="p-4 tm-bg-gray tm-catalog-item-description">
+                  <h3 class="tm-text-primary mb-3 tm-catalog-item-title">Inspiration at Every Turn</h3>
+                  <p class="tm-catalog-item-text">Step into a world of natural beauty and serenity with our enchanting plant nursery highlight
+                                                  video. Join us as we embark on a visual journey through lush greenery, vibrant blooms, and
+                                                  the tranquil atmosphere of our botanical paradise.
+                  </p>
+                </div>
               </div>
 
-              <div class="video-button-bottom hide">
-                <a href="#content" class="btn tm-btn-animate tm-btn-cta tm-icon-down">
-                  <span>Discover</span>
-                </a>
-              </div>
+              <!-- add more videos here! -->
 
             </div>
-
-            <div id="tm-video-container">
-              <video autoplay muted loop playsinline id="tm-video">
-                <source src="video/frontPageVid.mp4" type="video/mp4">
-              </video>
-            </div>
-
-            <i id="tm-video-control-button" class="fas fa-pause"></i>
-        </div>
-
-        <div class="container-fluid">
-            <div id="content" class="mx-auto tm-content-container">
-                <main>
-                    <div class="row tm-catalog-item-list">
-                        <div class="col-lg-4 col-md-6 col-sm-12 tm-catalog-item">
-                            <div class="position-relative tm-thumbnail-container">
-                                <img src="img/dirtBike.jpg" alt="Image" class="img-fluid tm-catalog-item-img">
-                                <a href="videoPages/highlights.html" class="position-absolute tm-img-overlay">
-                                    <i class="fas fa-play tm-overlay-icon"></i>
-                                </a>
-                            </div>
-                            <div class="p-4 tm-bg-gray tm-catalog-item-description">
-                                <h3 class="tm-text-primary mb-3 tm-catalog-item-title">Unveiling My Expertise</h3>
-                                <p class="tm-catalog-item-text">Witness the culmination of countless hours poured into refining my
-                                                               skills and honing my craft. Whether it's breathtaking cinematography,
-                                                               stunning motion graphics, or innovative design concepts, every element
-                                                               of the highlight video is a reflection of my commitment to excellence.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-sm-12 tm-catalog-item">
-                          <div class="position-relative tm-thumbnail-container">
-                              <img src="img/voiceComm.jpg" alt="Image" class="img-fluid tm-catalog-item-img">
-                              <a href="videoPages/voiceComm.html" class="position-absolute tm-img-overlay">
-                                  <i class="fas fa-play tm-overlay-icon"></i>
-                              </a>
-                          </div>
-                          <div class="p-4 tm-bg-gray tm-catalog-item-description">
-                              <h3 class="tm-text-primary mb-3 tm-catalog-item-title">Immersive Experience</h3>
-                              <p class="tm-catalog-item-text">Break free from the confines of traditional videography
-                                                              and explore indoor spaces in ways you never thought possible.
-                                                              With our drone tour highlight video, the sky's the limit as we
-                                                              redefine the boundaries of storytelling and visual exploration.
-                              </p>
-                          </div>
-                      </div>
-                        <div class="col-lg-4 col-md-6 col-sm-12 tm-catalog-item">
-                            <div class="position-relative tm-thumbnail-container">
-                                <img src="img/wedding.png" alt="Image" class="img-fluid tm-catalog-item-img">
-                                <a href="videoPages/wedding.html" class="position-absolute tm-img-overlay">
-                                    <i class="fas fa-play tm-overlay-icon"></i>
-                                </a>
-                            </div>
-                            <div class="p-4 tm-bg-gray tm-catalog-item-description">
-                                <h3 class="tm-text-primary mb-3 tm-catalog-item-title">Elegance in Motion</h3>
-                                <p class="tm-catalog-item-text">Flying inside is a unique way to show off space. Check out this video
-                                                                where the drone navigates around inside and outside a wedding venue, as
-                                                                the groomsmen enjoy the setting.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-sm-12 tm-catalog-item">
-                            <div class="position-relative tm-thumbnail-container">
-                                <img src="img/collegeTour.png" alt="Image" class="img-fluid tm-catalog-item-img">
-                                <a href="videoPages/collegeTour.html" class="position-absolute tm-img-overlay">
-                                    <i class="fas fa-play tm-overlay-icon"></i>
-                                </a>
-                            </div>
-                            <div class="p-4 tm-bg-gray tm-catalog-item-description">
-                                <h3 class="tm-text-primary mb-3 tm-catalog-item-title">College Tour!</h3>
-                                <p class="tm-catalog-item-text">Experience the essence of higher education as we take you on a guided tour
-                                                                through the heart of an esteemed institution. From cutting-edge research
-                                                                labs to bustling student centers, each section of the video highlights the
-                                                                innovative learning environment that the college has to offer.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-sm-12 tm-catalog-item">
-                            <div class="position-relative tm-thumbnail-container">
-                                <img src="img/warehouseOverlay.png" alt="Image" class="img-fluid tm-catalog-item-img">
-                                <a href="videoPages/warehouse.html" class="position-absolute tm-img-overlay">
-                                    <i class="fas fa-play tm-overlay-icon"></i>
-                                </a>
-                            </div>
-                            <div class="p-4 tm-bg-gray tm-catalog-item-description">
-                                <h3 class="tm-text-primary mb-3 tm-catalog-item-title">Construction Start To Finish</h3>
-                                <p class="tm-catalog-item-text">Embark on an extraordinary journey through the evolution of a warehouse, from its
-                                                                humble beginnings to its grand completion. Our highlight video captures every riveting
-                                                                moment of the construction process, offering a glimpse into the meticulous planning,
-                                                                tireless labor, and sheer determination that brought this monumental project to life.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-sm-12 tm-catalog-item">
-                            <div class="position-relative tm-thumbnail-container">
-                                <img src="img/PlantNursery.jpg" alt="Image" class="img-fluid tm-catalog-item-img">
-                                <a href="videoPages/nursery.html" class="position-absolute tm-img-overlay">
-                                    <i class="fas fa-play tm-overlay-icon"></i>
-                                </a>
-                            </div>
-                            <div class="p-4 tm-bg-gray tm-catalog-item-description">
-                                <h3 class="tm-text-primary mb-3 tm-catalog-item-title">Inspiration at Every Turn</h3>
-                                <p class="tm-catalog-item-text">Step into a world of natural beauty and serenity with our enchanting plant nursery highlight
-                                                                video. Join us as we embark on a visual journey through lush greenery, vibrant blooms, and
-                                                                the tranquil atmosphere of our botanical paradise.
-                                </p>
-                            </div>
-                        </div>
-
-                        <!-- add more videos here! -->
-
-                     </div>
-                </main>
-            </div> <!-- tm-content-container -->
-        </div>
+          </main>
+        </div> <!-- tm-content-container -->
+      </div>
     </div> <!-- .tm-page-wrap -->
 
     <footer class="container-fluid text-center h2">
-        <div class="row pt-4 pb-4" >
-          <div class="col-sm-3 pt-2 pb-2">
-            <a href="#">Videos</a>
-          </div>
-          <div class="col-sm-3 pt-2 pb-2">
-            <a href="services.html">Services</a>
-          </div>
-          <div class="col-sm-3 pt-2 pb-2">
-            <a href="about.html">About</a>
-          </div>
-          <div class="col-sm-3 pt-2 pb-2">
-            <a href="contact.html">Contact</a>
-          </div>
+      <div class="row pt-4 pb-4" >
+        <div class="col-sm-3 pt-2 pb-2">
+          <a href="#">Videos</a>
+        </div>
+        <div class="col-sm-3 pt-2 pb-2">
+          <a href="services.html">Services</a>
+        </div>
+        <div class="col-sm-3 pt-2 pb-2">
+          <a href="about.html">About</a>
+        </div>
+        <div class="col-sm-3 pt-2 pb-2">
+          <a href="contact.html">Contact</a>
+        </div>
       </div>
     </footer>
 
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+
     <script>
         function setVideoSize() {
             const vidWidth = 1920;
