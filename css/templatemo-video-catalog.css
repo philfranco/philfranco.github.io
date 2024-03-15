@@ -309,8 +309,6 @@ h2, p { color: #666666; }
 
 .tm-footer-links > li { margin-bottom: 10px; }
 
-/*Video detail page*/
-
 /* Used to make the youtube video swap size for different screens */
 .fluid-yt{
   width: 100%;
@@ -378,31 +376,10 @@ h2, p { color: #666666; }
 .tm-video-description-box { max-width: 920px; }
 .tm-text-gray { color: #6F7071; }
 
-#tm-fixed-header-bg { height: 200px; }
 .tm-fixed-header-1 { background-image: url(../img/beach.jpg); }
 .tm-fixed-header-2 { background-image: url(../img/river.jpg); }
 .tm-fixed-header-3 { background-image: url(../img/fall.jpg); }
 .tm-fixed-header-4 { background-image: url(../img/sedona2.jpg); }
-
-@media (min-width: 720px) {
-  .tm-fixed-header {
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    background-color: white;
-}
-}
-
-@media (max-width: 719px) {
-  .tm-fixed-header {
-    /* background-position: center; */
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: contain;
-    background-color: white;
-}
-}
 
 video {
   width: 100%;
@@ -489,6 +466,15 @@ video {
     #tm-main-nav .nav-item { margin: 20px 40px; }
     .navbar-expand-lg .navbar-nav .nav-link { padding: 8px 0px; }
     .navbar-expand-lg .navbar-collapse { justify-content: flex-end; }
+
+    #tm-fixed-header-bg { height: 200px; }
+    .tm-fixed-header {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: white;
+  }
 }
 
 @media (max-width: 1419px) {
@@ -548,42 +534,16 @@ video {
     .tm-catalog-item-list { max-width: 924px; }
     .tm-share-box { max-width: 400px; }
 
+    #tm-fixed-header-bg { height: 100px; }
+    .tm-fixed-header {
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: contain;
+    background-color: white;
+    }
+
+    /* Hide certain things for the phone */
     .hide{
       display:none;
-    }
-}
-
-@media (max-width: 879px) {
-    .tm-categories-container {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-}
-
-/* probably dont need
-@media (max-width: 640px) {
-    .tm-subscribe-form {
-        flex-direction: column;
-        align-items: stretch;
-    }
-
-    .tm-subscribe-form > input {
-       max-width: 100%;
-    }
-
-    .tm-subscribe-form input {
-        margin-right: 0;
-        margin-bottom: 15px;
-    }
-
-    .tm-share-box {
-        padding-left: 1.5rem;
-        padding-right: 1.5rem;
-    }
-} */
-
-@media (max-width: 419px) {
-    .tm-testimonial {
-        flex-direction: column;
     }
 }
